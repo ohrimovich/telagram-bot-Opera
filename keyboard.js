@@ -13,7 +13,7 @@ module.exports = {
         [kb.back]
     ],
     reception: [
-        [kb.reception.call, kb.reception.email],
+        [kb.reception.contacts],
         [kb.reception.services, kb.reception.info],
         [kb.back]
     ],
@@ -53,6 +53,17 @@ module.exports = {
         [kb.rooms.suiteJp, kb.rooms.suiteEg],
         [kb.rooms.suiteKr, kb.rooms.suiteAm],
         [kb.rooms.backToRooms]
+    ],
+    info: [
+        [kb.reception.lhw],
+        [kb.reception.covid],
+        [kb.reception.location],
+        [kb.reception.backToRec]
+    ],
+    services: [
+        [kb.reception.gd, kb.reception.trans],
+        [kb.reception.cons, kb.reception.pillow],
+        [kb.reception.backToRec]
     ]
 
 }

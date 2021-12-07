@@ -32,7 +32,7 @@ bot.on('message', async msg => {
             )
             break
         case kb.home.fnb:
-             bot.sendMessage(chatId,'РЕСТОРАН ТА БАР', {
+             bot.sendMessage(chatId,'ЇЖА ТА НАПОЇ', {
                 reply_markup: {keyboard: keyboard.fnb}
             }
             )
@@ -213,6 +213,55 @@ bot.on('message', async msg => {
             await bot.sendMessage(chatId, `Ми раді запропонувати Вам унікальну можливість спробувати вінтажні та рідкісні вина в готелі Опера, заощадивши на покупці цілої пляшки і заплативши тільки за келих. Ми використовуємо спеціальну систему збереження смакових якостей напоїв від Coravin, і ви можете бути впевнені, що вино у вашому келиху буде ідеальним.\nМи будемо раді вітати вас в Лобі Лаунж Барі і ресторані Teatro, щоб представити нашу вийняткову винну карту, відзначену нагородою Wine Spectator.`
             )
             await bot.sendDocument(chatId, 'https://www.travelclick-websolutions.com/uploads/applications/documents/001/638/187/wine-list-nov-21.pdf')
+            break
+        
+        /////////////Receptions Request BUTTONS//////////////  
+        case kb.reception.contacts:
+            bot.sendMessage(chatId, `Рецепція:\nТел: +380 44 581 70 70 (вн. 1117)\nМоб (Viber/WhatsApp):\n+380 98 581 70 70\n e-mail: reсeption@opera-hotel.com`)
+            break
+         case kb.reception.info:
+            bot.sendMessage(chatId, 'Інформація про готель', {
+                reply_markup: {keyboard: keyboard.info}
+            })
+            break
+        case kb.reception.backToRec:
+            bot.sendMessage(chatId, 'НАЗАД', {
+                reply_markup: {keyboard: keyboard.reception}
+            })
+            break
+        case kb.reception.services:
+            bot.sendMessage(chatId, 'ПОСЛУГИ', {
+                reply_markup: {keyboard: keyboard.services}
+            })
+            break
+        
+        case kb.reception.lhw:
+            bot.sendMessage(chatId, `The Leading Hotels of the World, Ltd - це плеяда автентичних та незвичайних готелів. Асоціація, що створена  з понад 400 готелів, які розташовані в 80 країнах  світу. Готелі, що входять до асоціації, своєю сутністю  підкреслюють особливості кожного окремого регіону.\nДетальніше за посиланням:\nhttps://www.lhw.com/`)
+            break
+         case kb.reception.covid:
+            await bot.sendMessage(chatId, `Основним пріоритетом готелю Опера завжди були безпека наших гостей та працівників готелю. Тому для того, щоб зупинити розповсюдження коронавірусної хвороби COVID-19 та захистити наших гостей на усіх етапах перебування в готелі Опера, ми оновили всі наші політики та процедури, використовуючи кращі практики та напрацювання з усього світу. Будь ласка, ознайомтеся з відповідними санітарно-гігієнічними нормами.\nЗалишайтеся в безпеці в готелі Опера.`)
+            await bot.sendDocument(chatId, 'https://www.travelclick-websolutions.com/uploads/applications/documents/001/593/000/covid-19-ua.pdf')
+            break
+        case kb.reception.location:
+           await bot.sendPhoto(chatId, 'https://image-tc.galaxy.tf/wipng-gyao4tf82b47qocfzbbuf34n/file.png?width=1920')
+           await bot.sendMessage(chatId, `Готель "Опера" розташований у тихому районі центральної частини Києва, за 10 хвилин від Національної Опери України та собору Святого Володимира. Гарна та затишна вулиця Богдана Хмельницького з великою кількістю історичних будівель, вишуканими ресторанами та кав’ярнями веде до головної вулиці міста - Хрещатика.\nhttps://goo.gl/maps/BpXeAnSYiJQZrQmf8`)
+            break
+        case kb.reception.gd:
+           await bot.sendPhoto(chatId, 'https://image-tc.galaxy.tf/wijpeg-b6do2pzx3un2m39egdboisgkr/file.jpg?width=1920')
+           await bot.sendMessage(chatId, `Наша команда прагне надати Вам сервіс міжнародного рівня, щоб перевершити Ваші очікування та продемонструвати традиційну українську гостинність.\nЩоб дізнатися більше інформації про перелік послуги, які ми прагнемо запропонувати нашим гостям, будь ласка, зверніться до Довідника готельних послуг.`)
+                bot.sendDocument(chatId, 'https://www.travelclick-websolutions.com/uploads/applications/documents/001/634/882/direktoria-ua-covid-21.pdf')
+            break
+        case kb.reception.trans:
+           await bot.sendPhoto(chatId, 'https://sales.mercedes-izmaylovo.ru/upload/resize_cache/iblock/80a/0qo8zbeyinkjqklnayfzhmxqiq8nrvi8/360_270_1/61548a556375c5.59890997_11486de07b793338cd84ee9453967544.jpg')
+           await bot.sendMessage(chatId, `Готель «Опера» пропонує послуги організації трансферів від/до Міжнародного Аеропорту «Бориспіль», Міжнародного Аеропорту «Київ» (Жуляни), Центрального залізничного вокзалу та інших напрямків.\nВартість трансферу на автомобілі бізнес-класу складає:\n\nМіжнародний Аеропорт «Бориспіль» - Готель (35 км, близько 45 хвилин на таксі) «Опера» - 85 евро.\n\nМіжнародний Аеропорт «Київ» - Готель (15 км, близько 25 хвилин на таксі) «Опера» - 45 евро.\n\nЦентральний залізничний вокзал - Готель (3 км, близько 15 хвилин на таксі) «Опера» - 20 евро.\n\nЩоб замовити послугу або дізнатися більше інформації, будь ласка, зв'яжіться з нашим консьєрж сервісом:\nconcierge@opera-hotel.com`)
+            break
+         case kb.reception.pillow:
+           await bot.sendMessage(chatId, `Щоб задовольнити ваші індивідуальні потреби та побалувати вас під час перебування в готелі «Опера», ми підготували спеціальне Меню Подушок. Оберіть свою особливу подушку і відчуйте розкіш відпочинку далеко від дому.\nЗв’яжіться з рецепцією за номером 1117, щоб зробити замовлення.\n\nСолодких снів!`)
+                bot.sendDocument(chatId, 'https://www.travelclick-websolutions.com/uploads/applications/documents/001/591/374/pillow-ua.pdf')
+            break
+        case kb.reception.cons:
+           await bot.sendPhoto(chatId, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-a2gybp4eVOcx_xUY0PwA_mvdL9mmPj1LtQ&usqp=CAU')
+           await bot.sendMessage(chatId, `Наша професійна команда консьєржів завжди до Ваших послуг.\nМи будемо раді допомогти вам з рекомендаціями про те, що подивитися в Києві і за його межами, організувати транспортні послуги, забронювати столик в ресторані, купити квитки на культурні та спортивні заходи, тощо.\nБудь-то ділова поїздка або відпустка, все буде організовано за найвищими стандартами, і ваше перебування стане незабутнім і приємним.\n\nЯкщо бажаєте дізнатися більше інформації, будь ласка, зв'яжіться з нашим консьєрж сервісом:\nconcierge@opera-hotel.com`)
             break
          
     }
