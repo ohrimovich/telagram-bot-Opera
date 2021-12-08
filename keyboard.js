@@ -37,8 +37,8 @@ module.exports = {
 
     ],
     spa: [
-        [kb.spa.price],
-        [kb.spa.call, kb.spa.site],
+        [kb.spa.price, kb.spa.site],
+        [kb.spa.call, kb.spa.gym],
         [kb.back]
 
     ],

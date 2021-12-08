@@ -1,7 +1,7 @@
 module.exports = {
     home: {
         rooms: '🚪НОМЕРИ',
-        reception: '🛎️RECEPTION',
+        reception: '🛎️РЕЦЕПЦІЯ',
         fnb: '🍽️🍹ЇЖА ТА НАПОЇ',
         events: '🎊ЗУСТРІЧІ ТА ЗАХОДИ',
         offers: '✨СПЕЦІАЛЬНІ ПРОПОЗИЦІЇ',
@@ -9,25 +9,25 @@ module.exports = {
     },
     rooms: {
         reserv: '💳Забронювати',
-        standart: '👌STANDART',
-        stadartKing: '👑STANDART KING ROOM',
-        stadartTwin: '✌️STANDART TWIN ROOM',
-        superior: '👍SUPERIOR',
-        suiteFr: '🇫🇷JUNIOR FRENCH SUITE',
-        suiteMr: '🇲🇦JUNIOR MOROCCAN SUITE',
-        suites: '🤟SUITES',
-        suiteJp: '🇯🇵EXECUTIVE JAPANESE SUITE',
-        suiteEg: '🇪🇬EXECUTIVE EGYPTIAN SUITE',
-        suiteKr: '🇺🇦EXECUTIVE KYIVSKA RUS SUITE',
-        suiteAm: '🇺🇸EXECUTIVE AMERICAN SUITE',
+        standart: '👌НОМЕРИ КАТЕГОРІЇ СТАНДАРТ',
+        stadartKing: '👑СТАНДАРТНИЙ НОМЕР КІНГ',
+        stadartTwin: '✌️СТАНДАРТНИ НОМЕР ТВІН',
+        superior: '👍НОМЕРИ КАТЕГОРІЇ ПОКРАЩЕНИЙ',
+        suiteFr: '🇫🇷ФРАНЦУЗЬКИЙ ЛЮКС',
+        suiteMr: '🇲🇦МАРОКАНСЬКИЙ ЛЮКС',
+        suites: '🤟НОМЕРИ ЛЮКС',
+        suiteJp: '🇯🇵ЯПОНСЬКИЙ ЛЮКС',
+        suiteEg: '🇪🇬ЄГИПЕТСЬКИЙ ЛЮКС',
+        suiteKr: '🇺🇦ЛЮКС КИЇВСЬКА РУСЬ',
+        suiteAm: '🇺🇸АМЕРИКАНСЬКИЙ ЛЮКС',
         backToRooms: '⬅️НАЗАД ДО НОМЕРІВ'
     },
     reception: {
         contacts: '📞КОНТАКТИ',
         services: '⏲️ПОСЛУГИ',
-        info: '📝INFO',
+        info: '📝ІНФО',
         lhw: '🌟LHW',
-        covid: '😷COVID-19',
+        covid: '😷ПРОТОКОЛ З COVID-19',
         location: '🗺️МІСЦЕЗНАХОДЖЕННЯ',
         gd: '🏩ПОСЛУГИ ГОТЕЛЮ',
         trans: '🚗ТРАНСФЕР',
@@ -38,8 +38,8 @@ module.exports = {
     },
     FnB: {
         teatro: '🍝🍷РЕСТОРАН TEATRO',
-        bar: '🥃LOBBY LOUNGE BAR',
-        rs: '🌹🥂ROOM SERVICE',
+        bar: '🥃ЛОБІ ЛАУНЖ',
+        rs: '🌹🥂ОБСЛУГОВУВАННЯ НОМЕРІВ',
     },
     events: {
         symph: '📢🦸СИМФОНІЯ',
@@ -56,6 +56,7 @@ module.exports = {
         price: '🔖ПРАЙС',
         call: '📞КОНТАКТИ СПА',
         site: '🌐САЙТ',
+        gym: '🏋️ЗАЛ ТА АКВА ЗОНА'
 
     },
     back: '⬅️НАЗАД',
