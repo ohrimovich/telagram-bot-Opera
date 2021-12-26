@@ -4,7 +4,7 @@ const keyboard = require('./keyboard')
 const kbEn = require('./keyboard-buttonsEn.js')
 const keyboardEn = require('./keyboardsEn')
 
-const token = '5097611643:AAFCp4h_REGImBb4-_DIfqYFAFFHGYkDYpU'
+const token = token
 
 const bot = new TelegramApi(token, { polling: true })
 
